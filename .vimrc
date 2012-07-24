@@ -228,8 +228,8 @@ map  :w!<cr>:!aspell check %<cr>:e! %<cr>
 "----- have java highlight our functions
 let java_highlight_functions=1
 "set foldclose=
-"set foldcolumn=1
-"set foldmethod=syntax
+set foldcolumn=1
+set foldmethod=syntax
 "set foldenable
 
 "syn region foldRegion start=+{+ end="}" fold
@@ -239,3 +239,4 @@ map ,fa :set foldclose=all<cr>
 map ,fm :set foldclose=<cr>
 "----- instructions for VIM on processing this file
 " vim:ts=3
+runtime plugin/RainbowParenthsis.vim 

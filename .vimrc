@@ -221,7 +221,7 @@ autocmd BufWritePost *.gz undo|set nobin
 autocmd FileReadPost *.gz set bin|'[,']!gunzip
 autocmd FileReadPost set nobin
 
-set ai
+"set ai
 
 map  :w!<cr>:!aspell check %<cr>:e! %<cr>
 
@@ -230,7 +230,8 @@ let java_highlight_functions=1
 "set foldclose=
 set foldcolumn=1
 set foldmethod=syntax
-"set foldenable
+set foldenable
+set foldlevel=10
 
 "syn region foldRegion start=+{+ end="}" fold
 "syn region commentDef start=+/\*+ end="*/" keepend  fold
@@ -240,3 +241,7 @@ map ,fm :set foldclose=<cr>
 "----- instructions for VIM on processing this file
 " vim:ts=3
 runtime plugin/RainbowParenthsis.vim 
+"et foldclose=<cr>
+set cindent
+set autoindent
+set shiftwidth=3

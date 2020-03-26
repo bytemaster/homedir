@@ -20,7 +20,6 @@
 " Vim*font: fixed
 
 
-
 "----- set up the stuff for color highlighing in an xterm
 "if &term =~ "xterm"
  if has("terminfo")
@@ -92,6 +91,8 @@ nmap <C-tab> :tabnext<cr>
 map <C-S-tab> :tabprevious<cr>
 map <C-tab> :tabnext<cr>
 
+
+nmap s <C-w>
 nmap <C-t> :tabnew<cr>
 imap <C-t> <ESC>:tabnew<cr>
 
@@ -245,3 +246,5 @@ runtime plugin/RainbowParenthsis.vim
 set cindent
 set autoindent
 set shiftwidth=3
+
+
